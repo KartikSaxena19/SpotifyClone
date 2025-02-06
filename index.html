@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body bgcolor="black">
+    <div class="container flex">
+      <div class="left">
+        <div class="container1">
+          <div class="logo flex" style="justify-content: space-between;">
+            <img class="invert" src="img/logo.svg" alt="" />
+            <img class="invert close" src="img/close.svg" alt="">
+          </div>
+          <ul>
+            <li class="flex align-content">
+              <img class="invert" src="img/home.svg" alt="" />Home
+            </li>
+            <li class="flex align-content">
+              <img class="invert" src="img/search.svg" alt="" />Search
+            </li>
+          </ul>
+        </div>
+        <div class="container2">
+          <div class="lib flex">
+            <div style="color: rgb(255, 255, 255)">
+              <ul>
+                <li style="display: flex">
+                  <img
+                    class="invert liblogo"
+                    src="img/library.svg"
+                    alt=""
+                  />Your_Library
+                </li>
+              </ul>
+            </div>
+            <div class="pl" style="cursor: pointer">
+              <img class="invert" src="img/plus.svg" alt="" />
+            </div>
+          </div>
+          <div class="songList">
+            <ul>
+              
+            </ul>
+          </div>
+          <!-- <div class="box1">
+            <h1>Create your first playlist</h1>
+            <h2>It's easy,we'll help you</h2>
+            <button class="btn">Create playlist</button>
+          </div>
+          <div class="box1">
+            <h1>Let's find some podcasts to follow</h1>
+            <h2>We'll keep you updated on new episodes</h2>
+            <button class="btn">Browse podcasts</button>
+          </div>           -->
+        </div>
+      </div>
+      <div class="right">
+        <div class="top flex align-content">
+          <div class="arrow">
+            <ul class="flex">
+              <li><img class="invert hamburger" src="img/hamburger.svg" alt=""></li>
+              <li><img id="back" class="invert" src="img/backward.svg" alt="" /></li>
+              <li><img id="for" class="invert" src="img/forward.svg" alt="" /></li>
+            </ul>
+          </div>
+          <div>
+            <button class="signin">Sign up</button>
+            <button class="login">Log In</button>
+          </div>
+        </div>
+        <div class="container3">
+          <div class="text">Spotify Playlists</div>
+          <div class="grid">
+            <div data-folder="Glory" class="card1 cr">
+              <!-- play-btn -->
+              <div class="play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 48 48"
+                  width="48"
+                  height="48"
+                >
+                  <circle
+                    cx="24"
+                    cy="24"
+                    r="22"
+                    fill="green"
+                    stroke="black"
+                    stroke-width="0"
+                  />
+                  <path
+                    d="M18 14L34 24L18 34Z"
+                    fill="black"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="img/ph.png" alt="" />
+              <h3>Glory</h3>
+              <p>Yo Yo Honey Singh</p>
+            </div>
+            <div data-folder="Hustle" class="card1 cr1">
+              <div class="play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 48 48"
+                  width="48"
+                  height="48"
+                >
+                  <circle
+                    cx="24"
+                    cy="24"
+                    r="22"
+                    fill="green"
+                    stroke="black"
+                    stroke-width="0"
+                  />
+                  <path
+                    d="M18 14L34 24L18 34Z"
+                    fill="black"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="img/ph1.png" alt="" />
+              <h3>Hustle</h3>
+              <p>By Kalua Don</p>
+            </div>
+            <div data-folder="Kshma" class="card1 cr2">
+              <div class="play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 48 48"
+                  width="48"
+                  height="48"
+                >
+                  <circle
+                    cx="24"
+                    cy="24"
+                    r="22"
+                    fill="green"
+                    stroke="black"
+                    stroke-width="0"
+                  />
+                  <path
+                    d="M18 14L34 24L18 34Z"
+                    fill="black"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="img/ph2.png" alt="" />
+              <h3>Kshma</h3>
+              <p>Seedhe Maut</p>
+            </div>
+            <div data-folder="ForTheDayOne" class="card1 cr3">
+              <div class="play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 48 48"
+                  width="48"
+                  height="48"
+                >
+                  <circle
+                    cx="24"
+                    cy="24"
+                    r="22"
+                    fill="green"
+                    stroke="black"
+                    stroke-width="0"
+                  />
+                  <path
+                    d="M18 14L34 24L18 34Z"
+                    fill="black"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="img/ph3.png" alt="" />
+              <h3>For The Day One $</h3>
+              <p>Kr$na</p>
+            </div>
+          </div>
+        </div>
+        <div class="container4">
+          <div class="playbtn flex">
+            <div class="songinfo"></div>
+            <div>
+              <img id="previous" style="cursor: pointer;" src="img/previous.svg" alt="" />
+              <img id="play" style="cursor: pointer;"src="img/play.svg" alt="" />
+              <img id="next" style="cursor: pointer;" src="img/next.svg" alt="" />
+            </div>
+            <div class="songtime"></div>
+          </div>
+          <div class="line">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

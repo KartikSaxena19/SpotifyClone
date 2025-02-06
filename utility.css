@@ -1,0 +1,37 @@
+.flex{
+    display: flex;
+}
+.justify-content{
+    justify-content: center;
+}
+.align-content{
+    align-items: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+/* For WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333; /* Dark track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000; /* Black thumb */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #222; /* Slightly lighter on hover */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: black #333;
+}
